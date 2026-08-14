@@ -1,6 +1,0 @@
-{
-  "name": "Zikirmatik",
-  "description": "Özgün temalar, zikir kütüphanesi, sesli & titreşimli sayaç ve istatistiklerle modern Zikirmatik uygulaması.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
