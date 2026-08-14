@@ -17,20 +17,11 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
 
-    - name: Find Gradlew and Build
+    - name: Setup Gradle and Build
       run: |
-        GRADLEW_PATH=$(find . -name "gradlew" -type f | head -n 1)
-        
-        if [ -z "$GRADLEW_PATH" ]; then
-          echo "HATA: gradlew dosyası depoda bulunamadı!"
-          exit 1
-        fi
-        
-        PROJECT_DIR=$(dirname "$GRADLEW_PATH")
-        cd "$PROJECT_DIR"
-        
+        cd zikirmatik
+        gradle wrapper
         chmod +x gradlew
         ./gradlew assembleDebug
 
@@ -38,4 +29,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: zikirmatik-app
-        path: "**/build/outputs/apk/debug/app-debug.apk"
+        path: zikirmatik/app/build/outputs/apk/debug/app-debug.apk
