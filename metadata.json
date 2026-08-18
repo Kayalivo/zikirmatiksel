@@ -1,0 +1,6 @@
+{
+  "name": "Luna - Regl Takvimi & Kadın Sağlığı",
+  "description": "Siyah-pembe modern tasarımlı kapsamlı regl ve ovülasyon takvimi, akıllı analiz anketi, semptom günlüğü ve VIP sağlık rehberliği.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
